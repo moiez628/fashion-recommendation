@@ -1,4 +1,7 @@
-# app.py
+import subprocess, sys
+
+# Force scikit-learn installation at runtime
+subprocess.check_call([sys.executable, "-m", "pip", "install", "scikit-learn"])# app.py
 
 import streamlit as st
 import pandas as pd
